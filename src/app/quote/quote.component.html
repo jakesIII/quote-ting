@@ -6,6 +6,6 @@
   <div *ngFor = 'let quote of quotes'>
     <p>{{quote.author}}</p>
     <app-quote-detail [quote]='quote'></app-quote-detail>
-    <span> <button>vote up</button> <button>vote down</button> </span>
-    <button>delete</button>
+    <span> <button (click) = 'voteUp(true)'>vote up</button> <button >vote down</button> </span> <br>
+    <button  (click) = 'quoteDelete(true)'>delete quote</button>
   </div>
