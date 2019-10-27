@@ -3,9 +3,7 @@
     <p>...get your {{title}} prescription. </p>
   </div>
   
-  <div *ngFor = 'let quote of quotes'>
-    <p>{{quote.author}}</p>
-    <app-quote-detail [quote]='quote'></app-quote-detail>
-    <span> <button (click) = 'voteUp(true)'>vote up</button> <button >vote down</button> </span> <br>
-    <button  (click) = 'quoteDelete(true)'>delete quote</button>
+  <div *ngFor = 'let quote of quotes; let i = index'>    
+    <app-quote-detail [quote]='quote' (isComplete)='deletedQuote($event, i)'></app-quote-detail>
+    <hr>
   </div>
