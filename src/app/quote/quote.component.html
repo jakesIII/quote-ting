@@ -4,5 +4,8 @@
   </div>
   
   <div *ngFor = 'let quote of quotes'>
-    <p>{{quote.quote}}</p>
+    <p>{{quote.author}}</p>
+    <app-quote-detail [quote]='quote'></app-quote-detail>
+    <span> <button>vote up</button> <button>vote down</button> </span>
+    
   </div>
