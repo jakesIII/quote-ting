@@ -6,7 +6,7 @@
 <p class="text-muted" style="font-size:12px;">Posted {{quote.datePost|dateCount}} days ago.</p>
 
 <span>
-     <button class="btn bg-light m-1" (click) = 'voteUp()'> {{upVote}} <i class="fa fa-thumbs-up pl-3 pr-3"></i></button>
+     <button appTopHighlight class="btn bg-light m-1" (click) = 'voteUp()'> {{upVote}} <i class="fa fa-thumbs-up pl-3 pr-3"></i></button>
      <button (click) = 'voteDown()' class="btn bg-light m-1" > {{downVote}}<i class="fa fa-thumbs-down pl-3 pr-3"></i></button> 
 </span> 
 
