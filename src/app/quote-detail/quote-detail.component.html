@@ -2,6 +2,6 @@
 <p> {{quote.quote}} </p>
 <p>Posted {{quote.datePost|dateCount}} days ago.</p>
 
-<span> <button (click) = 'voteUp(true)'>vote up</button> <button >vote down</button> </span> <br>
+<span> <button class="btn bg-light m-1" (click) = 'voteUp(true)'><i class="fa fa-thumbs-up"></i></button> <button class="btn bg-light m-1" ><i class="fa fa-thumbs-down"></i></button> </span> <br>
 
-<button  (click) = 'quoteDelete(true)'>delete quote</button>
+<button class="btn btn-outline-danger mt-4"  (click) = 'quoteDelete(true)'><i class="fa fa-trash"></i></button>

@@ -10,13 +10,7 @@ import { Quote } from '@angular/compiler';
 export class QuoteDetailComponent implements OnInit {
 
   
-  @Input() quote:Quote;
-
-  @Output() isDelete = new EventEmitter<boolean>();
-
-  quoteDelete(toDelete:boolean){
-    this.isDelete.emit(toDelete);
-  }
+  @Input() quote:Quote;  
 
   constructor() { }
 

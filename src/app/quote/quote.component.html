@@ -1,9 +1,21 @@
-<div>
+<header class="card-body">
     <h1>Da Quotes</h1>
-    <p>...get your {{title}} prescription. </p>
-  </div>
-  
-  <div *ngFor = 'let quote of quotes; let i = index'>    
-    <app-quote-detail [quote]='quote' (toDelete)='deletedQuote($event, i)'></app-quote-detail>
-    <hr>
-  </div>
+    <p class="text-muted">...get your {{title}} prescription. </p>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <app-quote-form></app-quote-form>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card card-body">
+                <div *ngFor = 'let quote of quotes; let i = index'>    
+                <app-quote-detail [quote]='quote'></app-quote-detail>
+                <hr>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
