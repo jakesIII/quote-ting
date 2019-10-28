@@ -4,6 +4,6 @@
   </div>
   
   <div *ngFor = 'let quote of quotes; let i = index'>    
-    <app-quote-detail [quote]='quote' (isComplete)='deletedQuote($event, i)'></app-quote-detail>
+    <app-quote-detail [quote]='quote' (toDelete)='deletedQuote($event, i)'></app-quote-detail>
     <hr>
   </div>

@@ -17,8 +17,10 @@ export class QuoteComponent implements OnInit {
     new Quotes (3, 'Donald Trump', 'As long as you are going to be thinking, think big.', new Date(2000,2,9)),
   ]
 
-  if (isComplete) {
-    this.quotes.splice(index, 1);
+  deletedQuote(toDelete, index){
+    if (toDelete){
+      this.quotes.splice(index, 1);
+    }
   }
   constructor() { }
 
@@ -26,3 +28,5 @@ export class QuoteComponent implements OnInit {
   }
 
 }
+
+

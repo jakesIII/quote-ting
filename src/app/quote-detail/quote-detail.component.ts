@@ -12,10 +12,10 @@ export class QuoteDetailComponent implements OnInit {
   
   @Input() quote:Quote;
 
-  @Output() isComplete = new EventEmitter<boolean>();
+  @Output() isDelete = new EventEmitter<boolean>();
 
-  quoteDelete(complete:boolean){
-    this.isComplete.emit(complete);
+  quoteDelete(toDelete:boolean){
+    this.isDelete.emit(toDelete);
   }
 
   constructor() { }
