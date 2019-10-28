@@ -17,7 +17,12 @@ export class QuoteComponent implements OnInit {
     new Quotes (3, 'Donald Trump', 'As long as you are going to be thinking, think big.', 'Jon Ho', new Date(2000,2,9)),
   ]
 
-  
+  addNewGoal(quote){
+    let quotesLength = this.quotes.length;
+    quote.index = quotesLength+1;
+    quote.datePost = new Date (quote.datePost);
+    this.quotes.unshift(quote);
+  }
 
   constructor() { }
 
