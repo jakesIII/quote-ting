@@ -24,6 +24,12 @@ export class QuoteComponent implements OnInit {
     this.quotes.unshift(quote);
   }
 
+  unWanted(isDeleted, index){
+    if (isDeleted){
+      let toDelete = confirm(`Are you sure`)
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {

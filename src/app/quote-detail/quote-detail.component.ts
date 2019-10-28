@@ -12,7 +12,11 @@ export class QuoteDetailComponent implements OnInit {
   
   @Input() quote:Quote;  
 
-  vote = 0;
+  @Output() isDeleted = new EventEmitter <boolean>();
+
+  quoteDelete(complete:boolean){
+    this.isDeleted.emit(complete);
+  }
   
   constructor() { }
 
