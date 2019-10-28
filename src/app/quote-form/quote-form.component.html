@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h4>Create a new quote...</h4>
 
-    <form ngSubmit="submitQuote" #quoteForm='ngForm' class="form-group card-body ">
+    <form (ngSubmit)="submitQuote" #quoteForm='ngForm' class="form-group card-body ">
         <input type="text" placeholder="author" class="form-control m-2" name="author" [(ngModel)]="newQuote.author" #author='ngModel' required>
 
         <input type="text" placeholder="submitted by" class="form-control m-2" name="submitter" [(ngModel)]="newQuote.submitter" #submitter='ngModel' required>

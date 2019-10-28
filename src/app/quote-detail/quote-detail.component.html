@@ -3,6 +3,6 @@
 <p>Posted by ~{{quote.submitter}} </p>
 <p>Posted {{quote.datePost|dateCount}} days ago.</p>
 
-<span> <button class="btn bg-light m-1" (click) = 'voteUp(true)'><i class="fa fa-thumbs-up"></i></button> <button class="btn bg-light m-1" ><i class="fa fa-thumbs-down"></i></button> </span> <br>
+<span> <button class="btn bg-light m-1" (click) = 'voteUp()'> {{upVote}} <i class="fa fa-thumbs-up"></i></button> <button (click) = 'voteDown()' class="btn bg-light m-1" > {{downVote}}<i class="fa fa-thumbs-down"></i></button> </span> <br>
 
 <button class="btn btn-outline-danger mt-4"  (click) = 'quoteDelete(true)'><i class="fa fa-trash"></i></button>

@@ -12,6 +12,8 @@ export class QuoteDetailComponent implements OnInit {
   
   @Input() quote:Quote;  
 
+  vote = 0;
+  
   constructor() { }
 
   ngOnInit() {
