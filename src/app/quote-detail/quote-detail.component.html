@@ -1,7 +1,7 @@
 <p>{{quote.author}}</p>
 <p> {{quote.quote}} </p>
 <p>Posted by ~{{quote.submitter}} </p>
-<p>Posted {{quote.datePost|dateCount}} days ago.</p>
+<p class="text-muted" style="font-size:12px;">Posted {{quote.datePost|dateCount}} days ago.</p>
 
 <span>
      <button class="btn bg-light m-1" (click) = 'voteUp()'> {{upVote}} <i class="fa fa-thumbs-up pl-3 pr-3"></i></button>
