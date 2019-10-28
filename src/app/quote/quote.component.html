@@ -1,21 +1,23 @@
-<header class="card-body">
-    <h1>Da Quotes</h1>
-    <p class="text-muted">...get your {{title}} prescription. </p>
-</header>
+<div class="background">
+    <header class="card-body">
+        <h1>Da Quotes</h1>
+        <p class="text-muted">...get your {{title}} prescription. </p>
+    </header>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <app-quote-form></app-quote-form>
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+            </div>
 
-        <div class="col-md-6">
-            <div class="card card-body">
-                <div *ngFor = 'let quote of quotes; let i = index'>    
-                <app-quote-detail [quote]='quote'></app-quote-detail>
-                <hr>
+            <div class="col-md-6">
+                <div class="card card-body">
+                    <div *ngFor = 'let quote of quotes; let i = index'>    
+                    <app-quote-detail [quote]='quote'></app-quote-detail>
+                    <hr>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>    
+        </div>    
+    </div>
 </div>
