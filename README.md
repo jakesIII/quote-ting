@@ -1,25 +1,30 @@
-# Da Quotes landing page.
+# Da Quotes.
 ##### by Jacques Kiruma.
 #### Description
 Da Quotes is a single landing application, that enables users to see posted quotes as well as post their own quotes.
 
 #### Technology Used
-*HTML 5 - Give a layout of the view.
-*CSS 3 - For a more customize landing page.
-*Bootstrap - For general responsivity.
-*Javascript - For a more interactive landing page.
-*Angular - For a better user experience.
+- HTML 5:
+    > Give a layout of the view.
+- CSS 3:
+    > For a more customize landing page.
+- Bootstrap:
+    > For general responsivity.
+- Javascript:
+    > For a more interactive landing page.
+- Angular:
+    >For a better user experience.
 
 #### BDD
 Behavior Driven Development is a way of constructing a program based off what the expected outcome is. Expected outcome is broken to what is required and a code built around this requirements.
 
-###### Features
+**Features**
 As a User I want to
 
-** Create a new quote.
-** Upvote or downvote a quote.
-** Delete a quote
-** See the number of upvotes and number of downvotes for each quote.
+1. Create a new quote.
+2. Upvote or downvote a quote.
+3. Delete a quote
+4. See the number of upvotes and number of downvotes for each quote.
 
 
 #### Contribution
