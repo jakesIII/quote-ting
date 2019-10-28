@@ -26,7 +26,11 @@ export class QuoteComponent implements OnInit {
 
   unWanted(isDeleted, index){
     if (isDeleted){
-      let toDelete = confirm(`Are you sure`)
+      let toDelete = confirm(`Are you sure you want to delet ${this.quotes[index].author}'s quote?`)
+
+      if (toDelete) {
+        this.quotes.splice(index, 1)
+      }
     }
   }
 
