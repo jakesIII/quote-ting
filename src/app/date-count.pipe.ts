@@ -12,9 +12,7 @@ export class DateCountPipe implements PipeTransform {
     const secondsperDay = 86400;
     var dateDifference = difference*0.001;
     var dateCounter = Math.floor(dateDifference/secondsperDay);
-    const minutesPerDay = 1440;
-    var minuteCounter = dateDifference/minutesPerDay;
-
+    
     if (dateCounter >= 1 && value > dayWithNoTime){
       return 0;
     } else {
